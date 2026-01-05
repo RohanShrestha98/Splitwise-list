@@ -76,7 +76,7 @@ const ReactTable = React.forwardRef(
                       <th
                         key={header.id}
                         colSpan={header.colSpan}
-                        className="px-3 py-3 text-left leading-4 text-tableText font-medium text-[10px] cursor-pointer select-none whitespace-nowrap"
+                        className="px-3 py-3 text-left leading-4 text-tableText font-medium text-xs cursor-pointer select-none whitespace-nowrap"
                         onClick={header.column.getToggleSortingHandler()}
                       >
                         <div className="flex items-center gap-1">
@@ -99,7 +99,7 @@ const ReactTable = React.forwardRef(
                   {row?.getVisibleCells()?.map((cell) => (
                     <td
                       key={cell.id}
-                      className="px-3 py-2 text-tableSubText text-[10px] border-b border-inputBorder whitespace-nowrap"
+                      className="px-3 py-2 text-tableSubText text-xs border-b border-inputBorder whitespace-nowrap"
                     >
                       {flexRender(
                         cell.column.columnDef.cell,

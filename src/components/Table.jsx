@@ -82,7 +82,7 @@ export default function GoogleSheetTanstackTable() {
           if (header === "Paid By") {
             return (
               <span
-                className={`px-3 min-w-24 cursor-pointer line-clamp-1 py-[2px] rounded-full text-[10px] font-medium ${
+                className={`px-3 min-w-24 cursor-pointer line-clamp-1 py-[2px] rounded-full text-xs font-medium ${
                   cellValue === "Rohan Shrestha"
                     ? "bg-blue-100 text-blue-600"
                     : "bg-green-100 text-green-600"
